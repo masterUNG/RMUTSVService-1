@@ -4,6 +4,7 @@
 
     <!--Content-->
     <LinearLayout
+        android:background="#64ffffff"
         android:padding="@dimen/margin"
         android:layout_margin="@dimen/margin"
         android:orientation="vertical"
