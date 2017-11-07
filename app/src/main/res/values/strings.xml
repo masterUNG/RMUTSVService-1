@@ -3,8 +3,8 @@
     <string name="thai_name">ศรีวิชัย แอพ</string>
     <string name="user">User :</string>
     <string name="password">password :</string>
-    <string name="register">New Register</string>
     <string name="name">Name :</string>
+    <string name="new_register">New Register</string>
 
 
 </resources>
