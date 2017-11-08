@@ -31,6 +31,7 @@
 
         <!--User-->
         <LinearLayout
+            android:id="@+id/edtUser"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -54,6 +55,7 @@
 
         <!--Password-->
         <LinearLayout
+            android:id="@+id/edtPassword"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -68,7 +70,7 @@
             <!--TextField-->
             <EditText
                 android:textColor="@color/colorPrimaryDark"
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:hint="@string/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -77,6 +79,7 @@
 
         <!--Login botton-->
         <Button
+            android:id="@+id/btnLogin"
             android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
