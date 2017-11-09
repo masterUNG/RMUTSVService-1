@@ -49,8 +49,8 @@ public class MainFragment extends Fragment{
             @Override
             public void onClick(View view) {
 
-                EditText userEditText = getView().findViewById(R.id.edtUser);
-                EditText passwordEditText = getView().findViewById(R.id.edtPassword);
+                EditText userEditText = getView().findViewById(R.id.edtUserMain);
+                EditText passwordEditText = getView().findViewById(R.id.edtPasswordMain);
 
                 userString = userEditText.getText().toString().trim();
                 passwordString = passwordEditText.getText().toString().trim();
@@ -75,7 +75,7 @@ public class MainFragment extends Fragment{
             getAllData.execute(mycomtent.getUrlGetAllUser());
             String strJSON = getAllData.get();
             Log.d (tag, "JSON==>" + strJSON);
-            ;String[] strings = new String[]{"Id", "Name", "Category", "User", "Password"};
+            ;String[] strings = new String[]{"id", "Name", "Category", "User", "Password"};
             String[] userStrings1 = new String[strings.length];
 
             JSONArray jsonArray = new JSONArray(strJSON);
@@ -99,6 +99,10 @@ public class MainFragment extends Fragment{
 
                 Toast.makeText(getActivity(), "Welcome" + userStrings1[1],
                         Toast.LENGTH_SHORT).show();
+
+
+
+
             } else {
                 MyAlert myAlert = new MyAlert(getActivity());
                 myAlert.myDialog("Password False", "Please Try Again Password False");
